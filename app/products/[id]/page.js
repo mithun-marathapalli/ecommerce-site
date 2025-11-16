@@ -14,8 +14,12 @@ const StyledProductDetails = styled.div`
     display: flex;
     gap: 20px;
     justify-content: center;
+    height: calc(100vh - 180px);
+    overflow-y: auto;
+    flex-wrap: wrap;
     .product-image {
         max-width: 30%;
+        min-width: 150px;
     }
     .product-info {
         margin: 40px 20px;
