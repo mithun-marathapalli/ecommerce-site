@@ -57,7 +57,7 @@ function ProductsHome() {
                           )} of ${total}`}
                 </div>
             </div>
-            {loading || true ? (
+            {loading ? (
                 <ListingLoader />
             ) : (
                 <div className="product-listing-container">
