@@ -1,14 +1,13 @@
 "use client"
 import React, { useEffect, useState } from "react"
 import { toast } from "react-hot-toast"
-import { fetchProductById } from "@/app/api/products"
-import styled from "styled-components"
 import Image from "next/image"
-import { productData } from "../constants"
-import Rating from "@/app/components/Rating"
-import cartIcon from "@/app/icons/cart_icon"
-import { useCartStore } from "@/app/store/cartStore"
-import ProductDetailsLoader from "@/app/components/ProductDetailsLoader"
+import styled from "styled-components"
+import Rating from "../../components/Rating"
+import cartIcon from "../../icons/cart_icon"
+import { useCartStore } from "../../store/cartStore"
+import ProductDetailsLoader from "../../components/ProductDetailsLoader"
+import { fetchProductById } from "../../api/products"
 
 const StyledProductDetails = styled.div`
     margin: 50px;
